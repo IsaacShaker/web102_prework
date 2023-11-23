@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    /* background-color: #758190; */
+    background-color: whitesmoke;
 }
 
 #tentacles {
@@ -12,7 +13,7 @@ body {
 .header {
     display: flex;
     background-color: lightblue;
-    padding: 1%;
+    padding: 0.05%;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
@@ -21,10 +22,17 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: stretch;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    /* background-color: #a8b0bc; */
+    background-color: rgba(212, 212, 212, 0.3);
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -39,7 +47,7 @@ body {
 #games-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .game-img {
@@ -53,7 +61,7 @@ body {
     padding: 1%;
     margin: 1%;
     width: 300px;
-    text-align: center;
+    text-align: left;
     border-radius: 7px;
 }
 
@@ -67,9 +75,41 @@ body {
 }
 
 button {
+    background-color: lightblue;
     font-family: 'Cabin';
+    font-weight: bold;
     border: none;
-    padding: 1%;
+    padding: 1% 2.5%;
     margin: 1%;
     border-radius: 7px;
+}
+
+button:hover {
+    scale: 1.1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+#game-search-in {
+    font-family: 'Cabin';
+    font-weight: bold;
+    border: none;
+    padding: 1% 2.5%;
+    margin: 1%;
+    margin-right: 0%;
+    border-radius: 7px;
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 0; */
+}
+
+#search-btn {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
