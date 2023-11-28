@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    min-height: 400px;
 }
 
 .game-img {
